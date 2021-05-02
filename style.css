@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.header {
+    background: #222222;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 75px;
+    margin: 0 auto;
+}
+.header_left {
+    list-style-type: none;
+    display: flex;
+    margin-left: 231px;
+}
+.top_image {
+    margin-left: 41px;
+    margin-top: 8px;
+}
+.top_image_right {
+    margin-left: 33px;
+}
+.top_image_menu {
+    padding-top: 4px;
+}
+.header_right {
+    list-style-type: none;
+    display: flex;
+    margin-right: 240px;
+}
+.top_content {
+    background-color: #F1E4E6;
+}
