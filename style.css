@@ -155,3 +155,122 @@ h6 {
     margin-top: 18px;
     margin-left: 18px;
 }
+.button {
+    font-size: 16px;
+    line-height: 19px;
+    color: #F26376;
+    text-decoration: none;
+    margin-top: 48px;
+    margin-bottom: 109px;
+    border: 1px solid #FF6A6A;
+    padding: 15px 38px;
+    align-self: center;
+}
+
+.footer_top {
+    background: #222224;
+    height: 341px;
+}
+.footer_info {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+.footer_top_content{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 103px;
+}
+.footer_img {
+    align-self: center;
+    padding-bottom: 25px;
+}
+.heading-5 {
+    font-size: 20px;
+    line-height: 24px;
+    color: #FBFBFB;
+    text-align: center;
+}
+.footer_text {
+    margin-top: 16px;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #FBFBFB;
+}
+.footer_background {
+    background-image: url(img/footer_background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 448px;
+    justify-content: space-between;
+    align-items: center;
+}
+.background_content {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 86px;
+    align-items: center;
+}
+.footer_left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.footer_middle_text {
+    padding-top: 18px;
+    width: 360px;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #222224;
+}
+.heading-4 {
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+    color: #222224;
+    line-height: 167.2%;
+
+}
+.form {
+    display: flex;
+    flex-direction: column;
+}
+.subscribe_text {
+    font-size: 18px;
+    text-align: center;
+    color: #222224;
+}
+.input {
+    background-color: #E1E1E1;
+    padding: 7px 103px 6px 22px;
+    border-radius: 15px 0 0 15px;
+    border:none;
+    margin-top:32px;
+    height: 32px;
+}
+.footer_button {
+    background-color:#F26376;
+    padding: 7px 20px 6px 20px;
+    border-radius:  0 15px 15px 0 ;
+    border:none;
+    margin-top:32px;
+    height: 45px;
+    font-size: 14px;
+    line-height: 17px;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    margin-left: -5px;
+}
+.footer_bottom {
+    background: #222224;
+    height: 79px;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FBFBFB;
+}
