@@ -178,6 +178,7 @@ body {
     height: 581px;
     align-self: center;
     background-color: #F8F8F8;
+    text-decoration: none;
 }
 h6 {
     padding-left: 18px;
@@ -212,6 +213,10 @@ h6 {
     border: 1px solid #FF6A6A;
     padding: 15px 38px;
     align-self: center;
+}
+.button:hover {
+    color: #FFFFFF;
+    background-color: #F16D7F;
 }
 
 .footer_top {
@@ -251,12 +256,10 @@ h6 {
     background-repeat: no-repeat;
     background-size: cover;
     height: 448px;
-    justify-content: space-between;
-    align-items: center;
 }
 .background_content {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     padding-top: 86px;
     align-items: center;
 }
@@ -325,4 +328,7 @@ h6 {
     color: #FBFBFB;
     padding-left: 235px;
     padding-right: 230px;
+}
+.icons:hover {
+    background-color: #F16D7F;
 }
