@@ -173,16 +173,52 @@ body {
     justify-content: space-between;
     padding-top: 30px;
 }
-.gallery_item {
+.item {
     width: 360px;
-    height: 581px;
-    align-self: center;
+    position: relative;
+}
+.item:hover {
+    box-shadow: 0 0 10px rgba(0,0,0,16);
+}
+.gallery_item {
+    display: block;
     background-color: #F8F8F8;
     text-decoration: none;
 }
+.item_pic {
+    width: 100%;
+}
+.item:hover .item_pic {
+    filter: brightness(50%);
+}
+.add_item {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    top: 188px;
+}
+.add {
+    font-family: Lato;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 13px;
+    border: solid 1px #ffffff;
+    display: none;
+}
+.add:hover {
+    box-shadow: 0px 0px 10px #e1e1e1;
+}
+.item:hover .add {
+    display: flex;
+}
+.description_item_box {
+    padding: 20px;
+}
 h6 {
-    padding-left: 18px;
-    padding-top: 25px;
+    padding-top: 5px;
     padding-bottom: 12px;
     font-size: 13px;
     line-height: 16px;
@@ -192,7 +228,6 @@ h6 {
     font-weight: 300;
     font-size: 14px;
     line-height: 17px;
-    padding-left: 18px;
     color: #5D5D5D;
     width: 315px;
 }
@@ -201,7 +236,6 @@ h6 {
     line-height: 19px;
     color: #F16D7F;
     margin-top: 18px;
-    margin-left: 18px;
 }
 .button {
     font-size: 16px;
@@ -328,6 +362,17 @@ h6 {
     color: #FBFBFB;
     padding-left: 235px;
     padding-right: 230px;
+}
+.icons {
+    color: black;
+    padding: 5px;
+    background-color: #ffffff;
+    width: 20px;
+    text-align: center;
+    display: inline-block;
+}
+.icons:not(:last-child){
+    margin-right: 7px;
 }
 .icons:hover {
     background-color: #F16D7F;
