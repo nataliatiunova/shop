@@ -416,7 +416,7 @@ h6 {
     line-height: 17px;
     color: #000000;
     padding-right: 10px;
-    padding-left: 10px;
+    
 }
 .gray_colortext {
     color: #6F6E6E;
@@ -430,6 +430,7 @@ h6 {
 .filter_box {
     display: flex;
     text-decoration: none;
+    padding-left: 10px;
 }
 
 .filter_drop_box {
@@ -512,9 +513,31 @@ h6 {
 .filter_item {
     text-decoration: none;
     display: flex;
+    margin-right: 28px;
 }
 .icon_filter {
     padding-bottom: 2px;
+}
+.pick_size_box{
+    position: relative;
+}
+.size_drop_box {
+    flex-direction: column;
+    display: none;
+    position: absolute;
+    margin-top: 5px;
+    left: -10px;
+    width: 79px;
+    height: 103px;
+    z-index: 9999;
+    background: #FFFFFF;
+    box-shadow: 6px 4px 35px rgb(0 0 0 / 21%);
+}
+.size_drop_box:hover {
+    display: flex;
+}
+.pick_size_box:hover .size_drop_box {
+    display: flex;
 }
 .pagination {
     display: flex;
