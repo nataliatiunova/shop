@@ -7,6 +7,12 @@ body {
   font-family: sans-serif;
 }
 
+.font_heading, .description, .footer_text, .catalog_top_right {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+}
+
 .container {
   max-width: 1140px;
   margin: 0 auto;
@@ -330,9 +336,6 @@ h6 {
 }
 
 .description {
-  font-weight: 300;
-  font-size: 14px;
-  line-height: 17px;
   color: #5D5D5D;
   width: 315px;
 }
@@ -408,9 +411,6 @@ h6 {
 
 .footer_text {
   margin-top: 16px;
-  font-weight: 300;
-  font-size: 14px;
-  line-height: 17px;
   text-align: center;
   color: #FBFBFB;
 }
@@ -572,9 +572,6 @@ h6 {
 }
 
 .catalog_top_right {
-  font-weight: 300;
-  font-size: 14px;
-  line-height: 17px;
   color: #636363;
 }
 
@@ -837,5 +834,71 @@ h6 {
 
 .pagin_item:hover {
   color: #EF5B70;
+}
+
+/* product page style */
+.product_background {
+  height: 777px;
+  background-color: #F7F7F7;
+  background-image: url(img_catalog/img_product.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.photo_pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.photo_pagination .previous_page {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-color: rgba(42, 42, 42, 0.15);
+  padding: 12px 15px;
+  margin-top: 365px;
+  color: #000000;
+}
+
+.photo_pagination .next_page {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-color: rgba(42, 42, 42, 0.15);
+  padding: 12px 15px;
+  margin-top: 365px;
+  color: #000000;
+}
+
+.photo_pagination .previous_page:hover {
+  color: #F16D7F;
+}
+
+.photo_pagination .next_page:hover {
+  color: #F16D7F;
+}
+
+.item_description {
+  height: 641px;
+  width: 1138px;
+  margin-top: -67px;
+  text-align: center;
+  border: 1px solid #F7F7F7;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  position: absolute;
+  background-color: #ffff;
+}
+
+.item_description .heading_product {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: #F16D7F;
+  margin-top: 64px;
 }
 /*# sourceMappingURL=style.css.map */

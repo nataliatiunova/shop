@@ -6,8 +6,14 @@ body {
     font-family: sans-serif;
     }
 $site_width: 1140px;
-
+$width_bd: 1px;
 $background_text_color:#F16D7F;
+
+.font_heading {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+}
 
 .container {
     max-width: $site_width;
@@ -229,9 +235,7 @@ h6 {
     color: #000000;
 }
 .description {
-    font-weight: 300;
-    font-size: 14px;
-    line-height: 17px;
+    @extend .font_heading;
     color: #5D5D5D;
     width: 315px;
 }
@@ -283,9 +287,7 @@ h6 {
 }
 .footer_text {
     margin-top: 16px;
-    font-weight: 300;
-    font-size: 14px;
-    line-height: 17px;
+    @extend .font_heading;
     text-align: center;
     color: #FBFBFB;
 }
@@ -396,9 +398,7 @@ h6 {
     color: $background_text_color;
 }
 .catalog_top_right {
-    font-weight: 300;
-    font-size: 14px;
-    line-height: 17px;
+    @extend .font_heading;
     color: #636363;
 }
 .filter_content {
@@ -598,3 +598,56 @@ h6 {
 .pagin_item:hover {
     color: #EF5B70;
 }
+/* product page style */
+.product_background {
+    height: 777px;
+    background-color: #F7F7F7;
+    background-image: url(img_catalog/img_product.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.photo_pagination {
+    display: flex;
+    display: flex;
+    justify-content: space-between;
+    .previous_page {
+        flex-wrap:wrap;
+        background-color: rgba(42, 42, 42, 0.15);
+        padding: 12px 15px;
+        margin-top: 365px;
+        color:#000000;
+    }
+    .next_page {
+        flex-wrap:wrap;
+        background-color: rgba(42, 42, 42, 0.15);
+        padding: 12px 15px;
+        margin-top: 365px;
+        color:#000000;
+    }
+    .previous_page:hover {
+        color: $background_text_color;
+    }
+    .next_page:hover {
+        color: $background_text_color;
+    }
+}
+.item_description {
+    height: 641px;
+    width: $site_width - 2*$width_bd;
+    margin-top: -67px;
+    text-align: center;
+    border: 1px solid #F7F7F7;
+    flex-wrap: wrap;
+    position: absolute;
+    background-color: #ffff;
+
+    .heading_product {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 17px;
+        color: #F16D7F;
+        margin-top: 64px;
+    }
+}
+
