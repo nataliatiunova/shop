@@ -642,7 +642,6 @@ input[type="email"]:focus {
     text-align: center;
     border: 1px solid #F7F7F7;
     flex-wrap: wrap;
-    position: absolute;
     background-color: #ffff;
 
     .heading_product {
@@ -697,4 +696,7 @@ input[type="email"]:focus {
         padding-bottom: 48px;
     }
 }
-
+.row_product_line {
+    padding-top: 129px;
+    padding-bottom: 148px;
+}

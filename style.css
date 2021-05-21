@@ -894,7 +894,6 @@ input[type="email"]:focus {
   border: 1px solid #F7F7F7;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  position: absolute;
   background-color: #ffff;
 }
 
@@ -962,5 +961,10 @@ input[type="email"]:focus {
       -ms-flex-pack: center;
           justify-content: center;
   padding-bottom: 48px;
+}
+
+.row_product_line {
+  padding-top: 129px;
+  padding-bottom: 148px;
 }
 /*# sourceMappingURL=style.css.map */
