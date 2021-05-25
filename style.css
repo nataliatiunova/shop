@@ -984,6 +984,12 @@ input[type="email"]:focus {
   padding-top: 59px;
 }
 
+.cart_content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .cart_box {
   margin-bottom: 40px;
   width: 652px;
@@ -1051,5 +1057,124 @@ input[type="email"]:focus {
 
 .button_clear:hover {
   color: #F16D7F;
+}
+
+.form_content {
+  margin-left: 129px;
+}
+
+.form-control {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  width: 341px;
+  height: 45px;
+  border: 1px solid #A4A4A4;
+  margin-bottom: 21px;
+  padding-left: 17px;
+}
+
+input[type="text"].form-control::-webkit-input-placeholder {
+  color: #B1B1B1;
+}
+
+input[type="text"].form-control::-moz-placeholder {
+  color: #B1B1B1;
+}
+
+.form_heading {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #222222;
+  padding-bottom: 21px;
+}
+
+.button_quote {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 11px;
+  line-height: 13px;
+  color: #4A4A4A;
+  border: 1px solid #4A4A4A;
+  padding: 10px 15px;
+  height: 34px;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+.button_quote:hover {
+  background-color: #F16D7F;
+  color: #ffffff;
+  border: 1px solid #A4A4A4;
+}
+
+.checkout_box {
+  background-color: #F5F3F3;
+  width: 360px;
+  height: 214px;
+  margin-left: 129px;
+  margin-top: 57px;
+}
+
+.sub_total {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 11px;
+  line-height: 13px;
+  color: #4A4A4A;
+  padding-bottom: 12px;
+  padding-top: 39px;
+  padding-right: 39px;
+}
+
+.heading_checkout {
+  padding-right: 15px;
+}
+
+.grand_total {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  color: #222222;
+  padding-right: 39px;
+  padding-bottom: 21px;
+}
+
+.border_total {
+  border: 1px solid #E2E2E2;
+  width: 275px;
+  margin-left: 43px;
+  margin-right: 43px;
+  margin-bottom: 17px;
+}
+
+.checkout_button {
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+  border: 1px solid #F16D7F;
+  padding: 17px 43px;
+  display: inline-block;
+  background-color: #F16D7F;
+  margin-left: 43px;
 }
 /*# sourceMappingURL=style.css.map */
