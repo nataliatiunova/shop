@@ -59,7 +59,7 @@ body {
   display: block;
 }
 
-.top_image_menu:hover .menu_box {
+.top_image_menu a:focus ~ .menu_box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -183,6 +183,12 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.img_item:hover {
+  -webkit-transform: scale(1.2, 1.2);
+          transform: scale(1.2, 1.2);
+  z-index: 9999;
 }
 
 .img_item_offer {
@@ -577,7 +583,8 @@ input[type="email"]:focus {
   color: #F16D7F;
 }
 
-.catalog_top_right {
+.catalog_links {
+  text-decoration: none;
   color: #636363;
 }
 
@@ -594,7 +601,7 @@ input[type="email"]:focus {
   display: -ms-flexbox;
   display: flex;
   color: #6F6E6E;
-  padding-left: 304px;
+  padding-left: 310px;
 }
 
 .filter_text {
@@ -1008,6 +1015,13 @@ input[type="email"]:focus {
           box-shadow: 0 0 10px #E5E5E5;
 }
 
+.cart_item_pic:hover {
+  -webkit-transform: scale(3, 3) translate(65px, 28px) rotate(360deg);
+          transform: scale(3, 3) translate(65px, 28px) rotate(360deg);
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+
 .cart_item_heading {
   font-style: normal;
   font-weight: normal;
@@ -1195,6 +1209,11 @@ input[type="email"].form-control::-moz-placeholder {
   margin-left: 43px;
 }
 
+.checkout_button:hover {
+  background-color: #FFFFFF;
+  color: #F16D7F;
+}
+
 /*registration page style*/
 .registration {
   margin-left: 0;
@@ -1249,6 +1268,11 @@ input[type="radio"] {
   display: inline-block;
   background-color: #F16D7F;
   margin-bottom: 96px;
+}
+
+.button_join:hover {
+  background-color: #FFFFFF;
+  color: #F16D7F;
 }
 
 .text_padding {

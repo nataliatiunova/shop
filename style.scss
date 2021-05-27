@@ -46,7 +46,8 @@ $background_text_color:#F16D7F;
     position: relative;
     display: block;
 }
-.top_image_menu:hover .menu_box{
+
+.top_image_menu a:focus ~ .menu_box {
     display: flex;
     background-color: #FFFFFF;
     flex-direction: column;
@@ -135,6 +136,10 @@ $background_text_color:#F16D7F;
 .img_item {
     position: relative;
     display: flex;
+}
+.img_item:hover {
+    transform: scale(1.2,1.2);
+    z-index: 9999;
 }
 .img_item_offer {
     position: absolute;
@@ -404,6 +409,10 @@ input[type="email"]:focus {
 }
 .catalog_top_right {
     @extend .font_heading;
+    
+}
+.catalog_links {
+    text-decoration: none;
     color: #636363;
 }
 .filter_content {
@@ -414,7 +423,7 @@ input[type="email"]:focus {
 .filter_menu_catalog {
     display: flex;
     color: #6F6E6E;
-    padding-left: 304px;
+    padding-left: 310px;
 }
 .filter_text {
     font-weight: 600;
@@ -731,6 +740,10 @@ input[type="email"]:focus {
 .cart_item:hover {
     box-shadow: 0 0 10px #E5E5E5;
 }
+.cart_item_pic:hover {
+    transform: scale(3,3) translate(65px,28px) rotate(360deg);
+    transition: 2s;
+}
 .cart_item_heading {
     font-style: normal;
     font-weight: normal;
@@ -884,6 +897,10 @@ input[type="text"].form-control::-webkit-input-placeholder {
     background-color: $background_text_color;
     margin-left: 43px;
 }
+.checkout_button:hover {
+    background-color: #FFFFFF;
+    color: $background_text_color;
+}
 /*registration page style*/
 .registration {
     margin-left: 0;
@@ -929,6 +946,10 @@ input[type="radio"] {
     display: inline-block;
     background-color: $background_text_color;
     margin-bottom: 96px;
+}
+.button_join:hover {
+    background-color: #FFFFFF;
+    color: $background_text_color;
 }
 .text_padding {
     padding-right: 20px;
