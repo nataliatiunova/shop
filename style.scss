@@ -96,17 +96,30 @@ $background_text_color:#F16D7F;
 .top_content {
     background-color: #F1E4E6;
     height: 764px;
-    width: 100%;
+    max-width: 100%;
+    flex: 0 0 100%;
+    box-sizing: border-box;
 }
 .banner {
     display: flex;
 }
+.banner_img {
+    max-width: 101%;
+    flex: 0 0 101%;
+    box-sizing: border-box;
+}
 .top_background {
     margin-left: -20%;
+    max-width: 70%;
+    flex: 0 0 70%;
+    box-sizing: border-box;
 }
 .top_border_info {
     display: flex;
     white-space: nowrap;
+    max-width: 50%;
+    flex: 0 0 50%;
+    box-sizing: border-box;
 }
 .top_border {
     width: 12px;
@@ -211,12 +224,13 @@ $background_text_color:#F16D7F;
     display: flex;
     justify-content: space-between;
     padding-top: 30px;
+    flex-wrap: wrap;
 }
 .wrap_item {
     max-width: 33.333333%;
     flex: 0 0 33.333333%;
     box-sizing: border-box;
-    padding: 0 8px;
+    padding: 0 30px 30px 0;
 }
 .item {
     position: relative;
@@ -312,7 +326,7 @@ h6 {
     display: flex;
     justify-content: space-between;
     padding-top: 103px;
-
+    width: 100%;
 }
 .footer_img {
     align-self: center;
@@ -1055,8 +1069,57 @@ input[type="radio"] {
 }
 /*tablet responsive*/
 
-@media screen and (min-width: 376px) and (max-width: 768px) {
-    
+@media screen and (min-width: 375px) and (max-width: 768px) {
+   .top_content {
+       height: 368px;
+   }
+   .top_background {
+        margin-left: 0%;
+        max-width: 54%;
+        flex: 0 0 54%;
+   }
+   .top_info_header {
+        font-style: normal;
+        font-size: 44px;
+        line-height: 53px;
+        }
+    .top_info_content {
+        font-size: 24px;
+        line-height: 29px;
+    }
+    .top_info {
+        margin-top: 139px;
+    }
+    .top_border {
+        margin-top: 138px;
+        margin-left: 39px;
+    }
+    .break {
+        padding-top: 20px;
+    }
+
+    .wrap_item {
+        max-width: 50%;
+        flex: 0 0 50%;
+        flex-wrap: wrap;
+        padding: 30px 15px;
+    }
+    .footer_top {
+        height: 610px;
+    }
+    .footer_top_content {
+        flex-direction: column;
+        align-items: center;
+        max-width: 100%;
+        flex: 0 0 100%;
+        padding: 0%;
+    }
+
+    .footer_info {
+        max-width: 100%;
+        flex: 0 0 100%;
+        padding-top: 47px;
+    }
 }
 /*iPhone responsive*/
 @media screen and (max-width: 375px) {
