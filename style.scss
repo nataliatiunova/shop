@@ -1120,6 +1120,15 @@ input[type="radio"] {
         flex: 0 0 100%;
         padding-top: 47px;
     }
+    .footer_background {
+        height: 693px;
+    }
+    .background_content {
+        flex-direction: column;
+    }
+    .form {
+        padding-top: 48px;
+    }
 }
 /*iPhone responsive*/
 @media screen and (max-width: 375px) {

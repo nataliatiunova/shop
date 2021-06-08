@@ -1503,6 +1503,18 @@ input[type="radio"] {
             flex: 0 0 100%;
     padding-top: 47px;
   }
+  .footer_background {
+    height: 693px;
+  }
+  .background_content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .form {
+    padding-top: 48px;
+  }
 }
 
 /*iPhone responsive*/
